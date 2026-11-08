@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKS INN | Luxury PVC Panels, Ceilings, Flooring & Architectural Solutions</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                        },
+                        darkslate: {
+                            900: '#090d16',
+                            800: '#0f172a',
+                            700: '#1e293b',
+                            600: '#334155',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #b45309 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-glow {
+            box-shadow: 0 0 25px -5px rgba(245, 158, 11, 0.3);
+        }
+        .hero-img-transition {
+            transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1), transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .hero-img-hidden {
+            opacity: 0;
+            transform: scale(0.97);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #090d16;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #f59e0b;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-darkslate-900 text-gray-200 font-sans antialiased overflow-x-hidden selection:bg-gold-500 selection:text-black">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-darkslate-900 via-darkslate-700 to-darkslate-900 text-gold-400 text-xs py-2.5 px-4 border-b border-gold-500/20">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-6 text-center sm:text-left">
+                <span><i class="fas fa-phone-alt text-gold-500 mr-2"></i> Direct Call / WhatsApp: +92 318 2064707</span>
+                <span class="hidden md:inline"><i class="fas fa-award text-gold-500 mr-2"></i> Premium Architectural Interior Fittings</span>
+            </div>
+            <div class="flex items-center space-x-4 text-gray-300">
+                <span class="text-xs bg-gold-500/10 text-gold-400 px-2.5 py-0.5 rounded-full border border-gold-500/30">
+                    <i class="fas fa-star mr-1"></i> 11 Specialist Product Categories
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-darkslate-900/90 backdrop-blur-md border-b border-gray-800 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Business Name & Brand Logo -->
+                <a href="#hero" class="flex items-center space-x-3 group">
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-gold-400 via-gold-600 to-darkslate-900 flex items-center justify-center text-darkslate-900 shadow-lg shadow-gold-500/20 border border-gold-400/40 font-bold group-hover:scale-105 transition-transform">
+                        <i class="fas fa-building text-xl text-darkslate-900"></i>
+                    </div>
+                    <div>
+                        <span class="font-serif text-2xl sm:text-3xl font-extrabold tracking-tight text-white block leading-none">LINKS <span class="gold-gradient-text">INN</span></span>
+                        <span class="text-[10px] tracking-widest text-gold-400 uppercase font-semibold block mt-0.5">Interior & Architectural Solutions</span>
+                    </div>
+                </a>
+
+                <!-- Navigation Links -->
+                <nav class="hidden lg:flex space-x-7 text-sm font-medium">
+                    <a href="#hero" class="text-white hover:text-gold-400 transition-colors">Home</a>
+                    <a href="#categories" class="text-gray-300 hover:text-gold-400 transition-colors">All 11 Categories</a>
+                    <a href="#calculator" class="text-gray-300 hover:text-gold-400 transition-colors">Cost Calculator</a>
+                    <a href="#uploader" class="text-gray-300 hover:text-gold-400 transition-colors">Photo Uploader</a>
+                    <a href="#about" class="text-gray-300 hover:text-gold-400 transition-colors">About Us</a>
+                    <a href="#contact" class="text-gray-300 hover:text-gold-400 transition-colors">Contact</a>
+                </nav>
+
+                <!-- Action Buttons -->
+                <div class="hidden sm:flex items-center space-x-4">
+                    <a href="https://wa.me/923182064707?text=Hi%20LINKS%20INN,%20I%20want%20information%20on%20interior%20products" target="_blank" class="flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2.5 rounded-xl font-medium text-xs transition-all shadow-lg shadow-emerald-950">
+                        <i class="fab fa-whatsapp text-sm"></i>
+                        <span>WhatsApp Quote</span>
+                    </a>
+                    <a href="#calculator" class="bg-gradient-to-r from-gold-500 to-gold-700 hover:from-gold-400 hover:to-gold-600 text-darkslate-900 font-bold px-5 py-2.5 rounded-xl text-xs transition-all shadow-md shadow-gold-500/20 border border-gold-400/40">
+                        Instant Estimate
+                    </a>
+                </div>
+
+                <!-- Mobile menu toggle button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-gold-400 focus:outline-none p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-darkslate-800 border-b border-gray-800 px-4 pt-3 pb-6 space-y-3">
+            <a href="#hero" class="block py-2 text-white font-medium hover:text-gold-400">Home</a>
+            <a href="#categories" class="block py-2 text-gray-300 hover:text-gold-400">11 Product Categories</a>
+            <a href="#calculator" class="block py-2 text-gray-300 hover:text-gold-400">Cost Estimator</a>
+            <a href="#uploader" class="block py-2 text-gray-300 hover:text-gold-400">Photo Uploader</a>
+            <a href="#about" class="block py-2 text-gray-300 hover:text-gold-400">About LINKS INN</a>
+            <a href="#contact" class="block py-2 text-gray-300 hover:text-gold-400">Contact Us</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <a href="https://wa.me/923182064707" target="_blank" class="w-full text-center bg-emerald-600 text-white py-3 rounded-xl flex items-center justify-center gap-2 font-medium text-xs">
+                    <i class="fab fa-whatsapp text-lg"></i> Contact on WhatsApp (+92 318 2064707)
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Hero Section with Interactive Category Switcher -->
+    <section id="hero" class="relative py-12 lg:py-20 overflow-hidden border-b border-gray-800">
+        <!-- Ambient Glowing Background Elements -->
+        <div class="absolute top-10 left-1/4 w-96 h-96 bg-gold-500/10 rounded-full blur-[130px] pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-80 h-80 bg-blue-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center lg:text-left mb-8">
+                <div class="inline-flex items-center space-x-2 bg-gold-500/10 border border-gold-500/30 rounded-full px-4 py-1.5 text-gold-400 text-xs font-semibold mb-4">
+                    <i class="fas fa-crown text-gold-400"></i>
+                    <span>LINKS INN Architectural & Interior Decor Catalog</span>
+                </div>
+                <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+                    Premium Solutions for <br class="hidden sm:inline">
+                    <span id="hero-category-title-display" class="gold-gradient-text transition-all duration-300">PVC Panel & Ceiling</span>
+                </h1>
+                <p class="text-gray-400 text-sm sm:text-base max-w-2xl mt-3 mx-auto lg:mx-0">
+                    Click any category title below to immediately update the main showcase picture, technical features, and pricing estimator!
+                </p>
+            </div>
+
+            <!-- 10 Category Selector Tabs Carousel -->
+            <div class="mb-10">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-xs uppercase tracking-widest text-gold-400 font-bold flex items-center gap-2">
+                        <i class="fas fa-mouse-pointer"></i> Select Category Title To Change Picture:
+                    </span>
+                    <span class="text-xs text-gray-400 italic hidden sm:block">Showing <span id="active-cat-count" class="text-gold-400 font-bold">1</span> of 11 categories</span>
+                </div>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2.5" id="hero-cat-buttons-container">
+                    <!-- Buttons will be populated via JS for clean mapping -->
+                </div>
+            </div>
+    <!-- Complete 11 Categories Showcase Grid -->
+    <section id="categories" class="py-20 bg-darkslate-800/40 relative border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-400 text-xs font-bold uppercase tracking-widest">Full Product Range</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-white mt-1">Our 11 Core Architectural Categories</h2>
+                <p class="text-gray-400 text-sm mt-3">LINKS INN offers a comprehensive range of premium wall, ceiling, flooring, glass works, and window solutions for residential and commercial spaces.</p>
+            </div>
+
+            <!-- Grid displaying all 11 categories -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5" id="all-categories-grid">
+                <!-- Cards dynamically created by JS to keep data clean -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Cost Estimator Calculator for All 11 Categories -->
+    <section id="calculator" class="py-20 bg-darkslate-900 relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-b from-darkslate-800 to-darkslate-900 rounded-3xl p-6 sm:p-10 border border-gold-500/30 shadow-2xl gold-border-glow">
+                
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <span class="text-gold-400 text-xs font-bold uppercase tracking-widest">Instant Budget Estimator</span>
+                    <h2 class="font-serif text-3xl font-extrabold text-white mt-1">LINKS INN Cost Calculator</h2>
+                    <p class="text-gray-400 text-xs sm:text-sm mt-2">Select any of the 11 categories, enter your room dimensions, and calculate an instant approximate estimate.</p>
+                </div>
+
+                        <!-- Embedded Photo Label -->
+                        <div class="absolute bottom-5 left-5 right-5 bg-darkslate-900/95 border border-gold-500/40 p-4 rounded-xl backdrop-blur-md flex items-center justify-between shadow-2xl">
+                            <div>
+                                <h3 id="hero-img-title" class="text-white font-bold text-base sm:text-lg">PVC Panel & Ceiling Design</h3>
+                                <p id="hero-img-desc" class="text-gray-300 text-xs sm:text-sm">Dual-tone wooden ceiling with cove LED channel and CNC center motif.</p>
+                            </div>
+                            <span class="hidden sm:flex items-center text-emerald-400 text-xs font-semibold px-3 py-1 bg-emerald-950/80 rounded-lg border border-emerald-500/40 shrink-0">
+                                <i class="fas fa-check-circle mr-1.5"></i> In Stock
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Details & Specifications -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="space-y-2">
+                        <span class="text-xs uppercase tracking-widest text-gold-400 font-bold">LINKS INN Product Feature</span>
+                        <h2 id="hero-detail-title" class="text-2xl sm:text-3xl font-serif font-bold text-white leading-snug">
+                            Luxury False Ceilings & Wall Panels
+                        </h2>
+                        <p id="hero-detail-text" class="text-gray-300 text-sm leading-relaxed">
+                            100% waterproof, termite-proof high-grade PVC paneling for ceilings and walls. Designed for rapid installation with concealed screw fittings and warm cove light channels.
+                        </p>
+                    </div>
+
+                    <!-- Technical Highlights Bullet Points -->
+                    <div class="space-y-2.5 pt-2 border-t border-gray-700/60" id="hero-spec-list">
+                        <!-- Populated via JS -->
+                    </div>
+
+                    <!-- Direct Order / Estimate Action -->
+                    <div class="pt-4 flex flex-col sm:flex-row gap-3">
+                        <button onclick="openCategoryQuoteModal()" class="flex-1 bg-gradient-to-r from-gold-500 to-gold-700 hover:from-gold-400 hover:to-gold-600 text-darkslate-900 font-bold py-3.5 px-6 rounded-xl text-xs transition-all shadow-lg flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp text-base"></i>
+                            <span>Inquire for <span id="hero-cta-cat-name">PVC Panel & Ceiling</span></span>
+                        </button>
+                        <a href="#calculator" class="bg-darkslate-900 hover:bg-darkslate-700 text-gray-200 border border-gray-700 font-semibold py-3.5 px-5 rounded-xl text-xs text-center transition-all">
+                            Estimate Price
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Complete 10 Categories Showcase Grid -->
+    <section id="categories" class="py-20 bg-darkslate-800/40 relative border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-400 text-xs font-bold uppercase tracking-widest">Full Product Range</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-white mt-1">Our 10 Core Architectural Categories</h2>
+                <p class="text-gray-400 text-sm mt-3">LINKS INN offers a comprehensive range of premium wall, ceiling, flooring, and window solutions for residential and commercial spaces.</p>
+            </div>
+
+            <!-- Grid displaying all 10 categories -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5" id="all-categories-grid">
+                <!-- Cards dynamically created by JS to keep data clean -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Cost Estimator Calculator for All 10 Categories -->
+    <section id="calculator" class="py-20 bg-darkslate-900 relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-b from-darkslate-800 to-darkslate-900 rounded-3xl p-6 sm:p-10 border border-gold-500/30 shadow-2xl gold-border-glow">
+                
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <span class="text-gold-400 text-xs font-bold uppercase tracking-widest">Instant Budget Estimator</span>
+                    <h2 class="font-serif text-3xl font-extrabold text-white mt-1">LINKS INN Cost Calculator</h2>
+                    <p class="text-gray-400 text-xs sm:text-sm mt-2">Select any of the 10 categories, enter your room dimensions, and calculate an instant approximate estimate.</p>
+                </div>
+
+                <div class="grid md:grid-cols-12 gap-8 items-center">
+                    
+                    <!-- Controls Column -->
+                    <div class="md:col-span-7 space-y-5">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">1. Select Product Category</label>
+                            <select id="calc-category-select" onchange="updateCalculator()" class="w-full bg-darkslate-900 border border-gray-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-gold-500 transition-colors">
+                                <!-- Options populated via JS -->
+                            </select>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">Length (Feet)</label>
+                                <input type="number" id="calc-length" value="12" min="1" oninput="updateCalculator()" class="w-full bg-darkslate-900 border border-gray-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-gold-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">Width / Height (Feet)</label>
+                                <input type="number" id="calc-width" value="10" min="1" oninput="updateCalculator()" class="w-full bg-darkslate-900 border border-gray-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-gold-500">
+                            </div>
+                        </div>
+
+                        <!-- Optional Quality Grade / Addon -->
+                        <div>
+                            <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">2. Installation Grade & Add-ons</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-3 text-xs text-gray-300 cursor-pointer">
+                                    <input type="checkbox" id="calc-addon-premium" checked onchange="updateCalculator()" class="accent-gold-500 w-4 h-4 rounded">
+                                    <span>Premium Wooden Grain Texture / Heavy Aluminum Frame (+ ₹20/sq.ft)</span>
+                                </label>
+                                <label class="flex items-center space-x-3 text-xs text-gray-300 cursor-pointer">
+                                    <input type="checkbox" id="calc-addon-labor" checked onchange="calculateCost()" class="accent-gold-500 w-4 h-4 rounded">
+                                    <span>Includes Professional Fitting & Delivery Hardware</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Output Card Column -->
+                    <div class="md:col-span-5 bg-gradient-to-br from-darkslate-900 via-darkslate-800 to-darkslate-900 p-6 sm:p-8 rounded-2xl border border-gold-500/40 text-center relative overflow-hidden shadow-2xl">
+                        <span class="text-xs uppercase text-gold-400 tracking-widest font-bold block">Estimated Project Cost</span>
+                        
+                        <div class="text-3xl sm:text-4xl font-extrabold text-white my-4 font-serif gold-gradient-text" id="calc-total-price">
+                            ₹14,400
+                        </div>
+
+                        <div class="text-xs text-gray-300 space-y-1.5 mb-6 bg-darkslate-900/80 p-3 rounded-xl border border-gray-800">
+                            <p>Category: <span id="calc-summary-cat" class="text-gold-400 font-semibold">PVC Panel & Ceiling</span></p>
+                            <p>Total Area: <span id="calc-summary-area" class="text-white font-medium">120 sq. ft.</span></p>
+                            <p class="text-[11px] text-gray-400 italic">* Estimated rate includes material & fitting</p>
+                        </div>
+
+                        <a id="calc-whatsapp-btn" href="#" target="_blank" class="w-full flex items-center justify-center space-x-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 rounded-xl text-xs transition-all shadow-lg">
+                            <i class="fab fa-whatsapp text-lg"></i>
+                            <span>Send Estimate on WhatsApp</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Photo Uploader: Assign Uploaded Photo to Any of the 10 Categories -->
+    <section id="uploader" class="py-20 bg-darkslate-800/40 border-y border-gray-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-darkslate-900 rounded-3xl p-6 sm:p-10 border border-gold-500/30 shadow-2xl">
+                
+                <div class="flex items-center space-x-4 mb-6">
+                    <div class="w-12 h-12 rounded-2xl bg-gold-500/10 border border-gold-500/40 flex items-center justify-center text-gold-400 text-xl shrink-0">
+                        <i class="fas fa-cloud-arrow-up"></i>
+                    </div>
+                    <div>
+                        <span class="text-gold-400 text-xs font-bold uppercase tracking-widest block">Interactive Photo Manager</span>
+                        <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white">Upload Custom Photos for Any Category</h3>
+                    </div>
+                </div>
+
+                <p class="text-gray-300 text-xs sm:text-sm mb-6 leading-relaxed">
+                    Have a picture of your own site or design sample? Upload it here, select the target category title (e.g. <em>PVC Panel & Ceiling</em> or <em>Wood Flooring</em>), and it will immediately set as the featured hero image and showcase thumbnail!
+                </p>
+
+                <div class="grid sm:grid-cols-12 gap-4 items-end bg-darkslate-800 p-5 rounded-2xl border border-gray-700">
+                    <div class="sm:col-span-5">
+                        <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">1. Select Target Category Title</label>
+                        <select id="user-upload-category-target" class="w-full bg-darkslate-900 border border-gray-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-gold-500">
+                            <!-- Populated dynamically via JS -->
+                        </select>
+                    </div>
+
+                    <div class="sm:col-span-4">
+                        <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-2">2. Custom Photo Title / Label</label>
+                        <input type="text" id="user-upload-custom-label" placeholder="e.g. My Living Room Design" class="w-full bg-darkslate-900 border border-gray-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-gold-500">
+                    </div>
+
+                    <div class="sm:col-span-3">
+                        <label class="w-full cursor-pointer bg-gradient-to-r from-gold-500 to-gold-700 hover:from-gold-400 hover:to-gold-600 text-darkslate-900 font-bold text-xs py-3.5 px-4 rounded-xl transition-all flex items-center justify-center gap-2 shadow-md">
+                            <i class="fas fa-upload"></i>
+                            <span>Choose Image</span>
+                            <input type="file" id="user-image-file-input" accept="image/*" class="hidden" onchange="handleUserPhotoUpload(event)">
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Feedback Toast Message -->
+                <div id="upload-feedback-msg" class="hidden mt-4 p-4 rounded-xl text-xs font-medium text-center border"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About LINKS INN Section -->
+    <section id="about" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-gold-400 text-xs font-bold uppercase tracking-widest">Why Choose LINKS INN?</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+                        Transforming Spaces with Precision Paneling & Flooring
+                    </h2>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        At <strong class="text-white">LINKS INN</strong>, we specialize in high-durability interior finishes ranging from light-weight 2x2 grid ceilings and waterproof PVC panels to luxury UV marble sheets, vinyl floorings, and heavy-duty aluminum doors and windows.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 text-xs">
+                        <div class="bg-darkslate-800 p-4 rounded-xl border border-gray-800 flex items-center space-x-3">
+                            <i class="fas fa-shield-halved text-gold-400 text-2xl"></i>
+                            <div>
+                                <h4 class="text-white font-bold">100% Waterproof</h4>
+                                <p class="text-gray-400 text-[11px]">Termite & damp resistance</p>
+                            </div>
+                        </div>
+                        <div class="bg-darkslate-800 p-4 rounded-xl border border-gray-800 flex items-center space-x-3">
+                            <i class="fas fa-stopwatch text-gold-400 text-2xl"></i>
+                            <div>
+                                <h4 class="text-white font-bold">Fast Fitting</h4>
+                                <p class="text-gray-400 text-[11px]">Minimal hassle & dust</p>
+                            </div>
+                        </div>
+                        <div class="bg-darkslate-800 p-4 rounded-xl border border-gray-800 flex items-center space-x-3">
+                            <i class="fas fa-tags text-gold-400 text-2xl"></i>
+                            <div>
+                                <h4 class="text-white font-bold">Wholesale Rates</h4>
+                                <p class="text-gray-400 text-[11px]">Direct factory pricing</p>
+                            </div>
+                        </div>
+                        <div class="bg-darkslate-800 p-4 rounded-xl border border-gray-800 flex items-center space-x-3">
+                            <i class="fas fa-tools text-gold-400 text-2xl"></i>
+                            <div>
+                                <h4 class="text-white font-bold">Expert Craftsmen</h4>
+                                <p class="text-gray-400 text-[11px]">Professional installation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="relative bg-gradient-to-br from-gold-500/20 to-darkslate-800 p-3 rounded-3xl border border-gold-500/30">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=80" alt="LINKS INN Showroom" class="w-full h-96 object-cover rounded-2xl">
+                        <div class="absolute -bottom-6 -right-6 bg-darkslate-900 border border-gold-500/40 p-5 rounded-2xl shadow-2xl hidden sm:block">
+                            <div class="flex items-center space-x-4">
+                                <span class="font-serif text-3xl font-extrabold text-gold-400">10+</span>
+                                <div class="text-xs">
+                                    <h4 class="text-white font-bold">Specialized Categories</h4>
+                                    <p class="text-gray-400">Complete Home & Office Fitout</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Direct Inquiry Form -->
+    <section id="contact" class="py-20 bg-darkslate-800/50 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-gold-400 text-xs font-bold uppercase tracking-widest">Get In Touch</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-white">Contact LINKS INN</h2>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Need free on-site measurements or catalogue sample books delivered to your doorstep? Get in touch with our expert project team.
+                    </p>
+
+                    <div class="space-y-4 text-xs pt-2">
+                        <div class="flex items-center space-x-4 bg-darkslate-900 p-4 rounded-xl border border-gray-800">
+                            <i class="fas fa-phone-alt text-gold-400 text-lg w-6"></i>
+                            <div>
+                                <h4 class="text-white font-bold">Call / WhatsApp Inquiry</h4>
+                                <p class="text-gray-400">+92 318 2064707</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4 bg-darkslate-900 p-4 rounded-xl border border-gray-800">
+                            <i class="fas fa-envelope text-gold-400 text-lg w-6"></i>
+                            <div>
+                                <h4 class="text-white font-bold">Email Address</h4>
+                                <p class="text-gray-400">contact@linksinn-interiors.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4 bg-darkslate-900 p-4 rounded-xl border border-gray-800">
+                            <i class="fas fa-map-marker-alt text-gold-400 text-lg w-6"></i>
+                            <div>
+                                <h4 class="text-white font-bold">Showroom Address</h4>
+                                <p class="text-gray-400">LINKS INN Architectural Hub, Main Decor Market</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inquiry Form -->
+                <div class="lg:col-span-7 bg-darkslate-900 p-8 rounded-3xl border border-gold-500/30 shadow-2xl">
+                    <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                        <h3 class="font-serif text-2xl font-bold text-white mb-2">Request Free Consultation</h3>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-1">Your Name *</label>
+                                <input type="text" id="contact-name" required placeholder="John Doe" class="w-full bg-darkslate-800 border border-gray-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-gold-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-1">Phone / WhatsApp *</label>
+                                <input type="tel" id="contact-phone" required placeholder="+91 98765 43210" class="w-full bg-darkslate-800 border border-gray-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-gold-500">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-1">Select Interested Product</label>
+                                <select id="contact-category" class="w-full bg-darkslate-800 border border-gray-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-gold-500">
+                                    <!-- Populated dynamically via JS -->
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-1">City / Location</label>
+                                <input type="text" id="contact-city" placeholder="Your City" class="w-full bg-darkslate-800 border border-gray-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-gold-500">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-gray-300 uppercase tracking-wider mb-1">Message / Room Measurement Details</label>
+                            <textarea id="contact-message" rows="3" placeholder="Tell us your requirements or estimated square footage..." class="w-full bg-darkslate-800 border border-gray-700 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-gold-500"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-gradient-to-r from-gold-500 to-gold-700 hover:from-gold-400 hover:to-gold-600 text-darkslate-900 font-bold py-4 rounded-xl text-xs transition-all shadow-lg">
+                            Send Direct Inquiry
+                        </button>
+                    </form>
+
+                    <div id="contact-status" class="hidden mt-4 p-4 rounded-xl text-xs font-medium text-center border"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-darkslate-900 border-t border-gray-800 text-gray-400 text-xs py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+            <div>
+                <span class="font-serif text-lg font-bold text-white block">LINKS <span class="gold-gradient-text">INN</span></span>
+                <p class="text-gray-500 text-[11px]">Specialists in PVC Panels, Ceilings, Wall Coverings, Flooring & Aluminum Works.</p>
+            </div>
+            <p>© 2026 LINKS INN. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Action Button -->
+    <a href="https://wa.me/923182064707?text=Hi%20LINKS%20INN,%20I%20am%20interested%20in%20your%20interior%20products" target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-400 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-transform hover:scale-110 border border-emerald-300/30">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- JavaScript Data Mapping & Logic -->
+    <script>
+        // Data Structure for the 11 exact categories
+        const linksInnCategories = [
+            {
+                id: 'pvc-ceiling',
+                title: 'PVC Panel & Ceiling',
+                icon: 'fa-layer-group',
+                ratePerSqFt: 120,
+                image: 'input_file_0.png',
+                shortDesc: 'Dual-Tone Wooden Ceiling & Central Floral Cutout',
+                detailTitle: 'Designer False Ceilings & Integrated Cove Profile',
+                detailText: 'High-density PVC false ceiling system featuring dual-tone wooden borders, white recessed panels, concealed warm LED light channels, and central CNC floral medallions.',
+                specs: [
+                    '100% Waterproof & Anti-Termite PVC Material',
+                    'Heavy Duty Galvanized Metal Framing Hardware',
+                    'Thermal & Sound Insulation Properties',
+                    'Zero Maintenance & Easy Wipe Clean Surface'
+                ]
+            },
+            {
+                id: 'glass-work',
+                title: 'Glass Work',
+                icon: 'fa-cubes',
+                ratePerSqFt: 210,
+                image: 'https://images.unsplash.com/photo-1509644851169-2acc08aa25b5?auto=format&fit=crop&w=1000&q=80',
+                shortDesc: 'Toughened Glass Partitions, Shower Cubicles & Lacquered Glass',
+                detailTitle: 'Architectural Toughened Glass & Interior Glazing',
+                detailText: 'Custom toughened glass partitions, frameless glass shower cubicles, lacquered color glass backsplashes, soundproof acoustic double glazing, and decorative LED mirrors.',
+                specs: [
+                    '10mm & 12mm Heavy-Duty Toughened Safety Glass',
+                    'Premium Stainless Steel Hardware & Patch Fittings',
+                    'Custom Frosted, Tinted & Beveled Edge Finishes',
+                    'Frameless & Sliding Glass Partition Systems'
+                ]
+            },
+            {
+                id: '2x2-ceiling',
+                title: '2x2 Ceiling',
+                icon: 'fa-table-cells',
+                ratePerSqFt: 75,
+                image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80',
+                shortDesc: 'Commercial & Office Modular 2x2 Grid Ceiling Tiles',
+                detailTitle: 'Modular 2x2 Lay-in Ceiling Grid Systems',
+                detailText: 'Standardized 2x2 feet acoustic gypsum, PVC, and mineral fiber ceiling tiles designed for quick drop-ceiling installation in corporate offices, showrooms, and institutions.',
+                specs: [
+                    'Standard 600x600mm T-Grid Aluminum Frame',
+                    'Easy Access to Ceiling Wiring & AC Ducting',
+                    'Sag-Resistant & Moisture Proof Coating',
+                    'Integrated LED Panel Light Compatibility'
+                ]
+            },
+            {
+                id: 'pvc-wall-panel',
+                title: 'PVC Wall Panel',
+                icon: 'fa-border-all',
+                ratePerSqFt: 95,
+                image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=80',
+                shortDesc: 'Decorative Waterproof 3D Wall Paneling & Louvers',
+                detailTitle: '3D Decorative PVC Wall Cladding',
+                detailText: 'Say goodbye to wall dampness and peeling paint. Our inter-locking PVC wall panels come in realistic marble, wood grain, and geometric textures for instant luxury accent walls.',
+                specs: [
+                    'Covers Damp & Flaking Walls Permanently',
+                    'Interlocking Tongue & Groove Seamless Joinery',
+                    'Fire Retardant & Shock Proof Material',
+                    'Available in 100+ Designer Colors & Textures'
+                ]
+            },
+            {
+                id: 'wallpaper',
+                title: 'Wallpaper',
+                icon: 'fa-scroll',
+                ratePerSqFt: 60,
+                image: 'https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=1000&q=80',
+                shortDesc: 'Custom 3D Textured & Imported Vinyl Wallpapers',
+                detailTitle: 'Luxury Metallic & 3D Embossed Wallpapers',
+                detailText: 'Imported European and Asian wallpaper rolls with deep texture embossing, gold foil accents, and damask patterns for bedroom headboards and living room focal walls.',
+                specs: [
+                    'Non-Woven & Heavy Vinyl Backing Material',
+                    'Washable & Scratch Resistant Finish',
+                    'Custom 3D Mural & Custom Photo Printing',
+                    'Seamless Professional Adhesive Application'
+                ]
+            },
+            {
+                id: 'glass-paper',
+                title: 'Glass Paper',
+                icon: 'fa-shield-cat',
+                ratePerSqFt: 45,
+                image: 'https://images.unsplash.com/photo-1509644851169-2acc08aa25b5?auto=format&fit=crop&w=1000&q=80',
+                shortDesc: 'Decorative Privacy Frosting & Solar Control Glass Films',
+                detailTitle: 'Privacy Frosted & Stained Glass Window Films',
+                detailText: 'Self-adhesive frosted glass paper, geometric tinted films, and one-way solar thermal control films for office glass partitions, balcony windows, and bathroom doors.',
+                specs: [
+                    '99% UV Light Rejection & Heat Reduction',
+                    'Instant Privacy without Blocking Natural Daylight',
+                    'Shatter-Resistant Glass Safety Protection',
+                    'Removable & Bubble-Free Static Cling Options'
+                ]
+            },
+            {
+                id: 'vinyl-flooring',
+                title: 'Vinyl Flooring',
+                icon: 'fa-rug',
+                ratePerSqFt: 85,
+                image: 'https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=1000&q=80',
+                shortDesc: 'Waterproof Luxury Vinyl Plank (LVP) Flooring',
+                detailTitle: 'Heavy-Duty Luxury Vinyl Plank Flooring (LVP)',
+                detailText: 'Scratch-resistant, silent, and 100% waterproof vinyl flooring planks available in wood plank and stone floor designs. Perfect for high footfall residential & commercial areas.',
+                specs: [
+                    '0.5mm Heavy Wear Layer with UV Coating',
+                    'Click-Lock & Glue-Down Installation Types',
+                    'Soft Underfoot & Anti-Slip Textured Surface',
+                    '100% Water Spill Resistant (Ideal for Kitchens)'
+                ]
+            },
+            {
+                id: 'wood-flooring',
+                title: 'Wood Flooring',
+                icon: 'fa-boxes-packing',
+                ratePerSqFt: 160,
+                image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80',
+                shortDesc: 'Engineered & Wooden Laminate Flooring Planks',
+                detailTitle: 'AC4 Grade Hardwood & Wooden Laminate Floor',
+                detailText: 'High-density fiberboard (HDF) wooden laminate and real engineered wood flooring offering timeless warmth, sound absorption, and high abrasion resistance.',
+                specs: [
+                    'AC4 Commercial Grade Scratch & Stain Resistance',
+                    'Authentic Beveled Edge V-Groove Plank Finish',
+                    'Includes Foam IXPE Moisture Barrier Underlayment',
+                    '15+ Years Structural Warranty'
+                ]
+            },
+            {
+                id: 'uv-sheet',
+                title: 'UV Sheet',
+                icon: 'fa-gem',
+                ratePerSqFt: 140,
+                image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80',
+                shortDesc: 'High Gloss UV Marble PVC Sheets for Wall & TV Backdrops',
+                detailTitle: 'High-Gloss Faux Marble UV PVC Wall Sheets',
+                detailText: 'Ultra-luxurious 3mm thick UV-coated PVC marble sheets that replicate real Italian marble slabs at a fraction of the weight and cost. Ideal for TV units and lobbies.',
+                specs: [
+                    'High Gloss Mirror Finish UV Cured Coating',
+                    'Seamless Large 8x4 Feet Panel Dimensions',
+                    'Scratch, Stain & Flame Retardant Surface',
+                    'Lightweight Alternative to Heavy Natural Stone Slabs'
+                ]
+            },
+            {
+                id: 'aluminium-doors',
+                title: 'Aluminium Doors & Windows',
+                icon: 'fa-door-open',
+                ratePerSqFt: 240,
+                image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=80',
+                shortDesc: 'Powder-Coated Sliding & Casement Aluminum Frames',
+                detailTitle: 'Modern Powder-Coated Aluminum Sliding Systems',
+                detailText: 'Slim-profile anodized and powder-coated aluminum sliding doors, casement windows, and bi-fold patio frames with double-glazed acoustic insulated glass.',
+                specs: [
+                    'Heavy Gauge Extruded Aluminum Alloy Frames',
+                    'Double Toughened Soundproof Glass Options',
+                    'Smooth Multi-Track Roller & Concealed Locks',
+                    'Weatherproof EPDM Rubber Gasket Seals'
+                ]
+            },
+            {
+                id: 'pvc-doors',
+                title: 'PVC Doors & Windows',
+                icon: 'fa-window-maximize',
+                ratePerSqFt: 180,
+                image: 'https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=1000&q=80',
+                shortDesc: 'Waterproof uPVC & PVC Bathroom / Balcony Doors',
+                detailTitle: 'Maintenance-Free uPVC & PVC Doors and Windows',
+                detailText: '100% rot-free, termite-proof PVC flush doors and uPVC window frames designed for humid zones such as bathrooms, balconies, and coastal buildings.',
+                specs: [
+                    'Will Never Swell, Warp, or Rot in Moisture',
+                    'Steel Reinforced Core for High Structural Rigidity',
+                    'Multi-Point Locking Safety Hardware',
+                    'Zero Painting or Polishing Required'
+                ]
+            }
+        ];
+
+        let currentActiveCategoryIndex = 0;
+
+        // Initialize Page
+        window.addEventListener('DOMContentLoaded', () => {
+            renderHeroCategoryButtons();
+            renderAllCategoriesGrid();
+            populateDropdowns();
+            selectHeroCategory(0);
+            updateCalculator();
+        });
+
+        // 1. Render Hero Selector Buttons
+        function renderHeroCategoryButtons() {
+            const container = document.getElementById('hero-cat-buttons-container');
+            container.innerHTML = '';
+
+            linksInnCategories.forEach((cat, idx) => {
+                const btn = document.createElement('button');
+                btn.id = `hero-cat-btn-${idx}`;
+                btn.onclick = () => selectHeroCategory(idx);
+                btn.className = `p-2.5 rounded-xl text-xs font-semibold flex items-center space-x-2 border transition-all text-left truncate ${
+                    idx === 0 
+                    ? 'bg-gold-500 text-darkslate-900 border-gold-400 font-bold shadow-md shadow-gold-500/20' 
+                    : 'bg-darkslate-800/80 text-gray-300 border-gray-700 hover:border-gold-500/50 hover:text-white'
+                }`;
+
+                btn.innerHTML = `
+                    <i class="fas ${cat.icon} text-sm shrink-0"></i>
+                    <span class="truncate">${cat.title}</span>
+                `;
+                container.appendChild(btn);
+            });
+        }
+
+        // 2. Select Category & Update Hero Frame
+        function selectHeroCategory(index) {
+            currentActiveCategoryIndex = index;
+            const cat = linksInnCategories[index];
+
+            // Update button styles
+            linksInnCategories.forEach((_, idx) => {
+                const b = document.getElementById(`hero-cat-btn-${idx}`);
+                if (b) {
+                    if (idx === index) {
+                        b.className = 'p-2.5 rounded-xl text-xs flex items-center space-x-2 border transition-all text-left truncate bg-gold-500 text-darkslate-900 border-gold-400 font-bold shadow-md shadow-gold-500/20';
+                    } else {
+                        b.className = 'p-2.5 rounded-xl text-xs flex items-center space-x-2 border transition-all text-left truncate bg-darkslate-800/80 text-gray-300 border-gray-700 hover:border-gold-500/50 hover:text-white';
+                    }
+                }
+            });
+
+            // Active counter update
+            document.getElementById('active-cat-count').innerText = index + 1;
+
+            // Fade animation on image showcase
+            const heroImg = document.getElementById('hero-showcase-img');
+            heroImg.classList.add('hero-img-hidden');
+
+            setTimeout(() => {
+                heroImg.src = cat.image;
+                document.getElementById('hero-category-title-display').innerText = cat.title;
+                document.getElementById('hero-cat-badge').innerText = `Category #${index + 1}`;
+                document.getElementById('hero-cat-icon').className = `fas ${cat.icon}`;
+                document.getElementById('hero-img-title').innerText = cat.title;
+                document.getElementById('hero-img-desc').innerText = cat.shortDesc;
+                document.getElementById('hero-detail-title').innerText = cat.detailTitle;
+                document.getElementById('hero-detail-text').innerText = cat.detailText;
+                document.getElementById('hero-cta-cat-name').innerText = cat.title;
+
+                // Render Technical Specs
+                const specContainer = document.getElementById('hero-spec-list');
+                specContainer.innerHTML = '';
+                cat.specs.forEach(spec => {
+                    const item = document.createElement('div');
+                    item.className = 'flex items-center space-x-2.5 text-xs text-gray-200';
+                    item.innerHTML = `
+                        <i class="fas fa-check-circle text-gold-400 text-sm shrink-0"></i>
+                        <span>${spec}</span>
+                    `;
+                    specContainer.appendChild(item);
+                });
+
+                heroImg.classList.remove('hero-img-hidden');
+            }, 250);
+
+            // Sync calculator select as well
+            const calcSelect = document.getElementById('calc-category-select');
+            if (calcSelect) {
+                calcSelect.value = index;
+                updateCalculator();
+            }
+        }
+
+        // 3. Render All 10 Categories Showcase Cards Grid
+        function renderAllCategoriesGrid() {
+            const grid = document.getElementById('all-categories-grid');
+            grid.innerHTML = '';
+
+            linksInnCategories.forEach((cat, idx) => {
+                const card = document.createElement('div');
+                card.className = 'bg-darkslate-900 rounded-2xl overflow-hidden border border-gray-800 hover:border-gold-500/50 transition-all duration-300 flex flex-col justify-between group shadow-xl hover:-translate-y-1';
+
+                card.innerHTML = `
+                    <div>
+                        <div class="relative h-44 overflow-hidden">
+                            <img src="${cat.image}" alt="${cat.title}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-darkslate-900 via-transparent to-transparent opacity-80"></div>
+                            <span class="absolute top-3 left-3 bg-darkslate-900/90 text-gold-400 text-[10px] font-bold px-2.5 py-1 rounded-md border border-gold-500/30">
+                                <i class="fas ${cat.icon} mr-1"></i> #${idx + 1}
+                            </span>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-serif font-bold text-white text-base group-hover:text-gold-400 transition-colors">${cat.title}</h3>
+                            <p class="text-gray-400 text-xs mt-1 leading-relaxed line-clamp-2">${cat.shortDesc}</p>
+                        </div>
+                    </div>
+                    <div class="px-4 pb-4 pt-2 border-t border-gray-800/80 flex items-center justify-between">
+                        <span class="text-gold-400 font-bold text-xs"><i class="fas fa-certificate text-[10px] mr-1"></i> Premium Quality</span>
+                        <button onclick="selectHeroCategory(${idx}); document.getElementById('hero').scrollIntoView({behavior:'smooth'});" class="text-xs text-gray-300 hover:text-white flex items-center gap-1 font-semibold">
+                            Preview <i class="fas fa-arrow-right text-[10px] text-gold-400"></i>
+                        </button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // 4. Populate Dropdowns for Calculator, Contact, and Photo Uploader
+        function populateDropdowns() {
+            const calcSelect = document.getElementById('calc-category-select');
+            const uploadSelect = document.getElementById('user-upload-category-target');
+            const contactSelect = document.getElementById('contact-category');
+
+            calcSelect.innerHTML = '';
+            uploadSelect.innerHTML = '';
+            contactSelect.innerHTML = '';
+
+            linksInnCategories.forEach((cat, idx) => {
+                const opt1 = document.createElement('option');
+                opt1.value = idx;
+                opt1.innerText = cat.title;
+                calcSelect.appendChild(opt1);
+
+                const opt2 = document.createElement('option');
+                opt2.value = idx;
+                opt2.innerText = cat.title;
+                uploadSelect.appendChild(opt2);
+
+                const opt3 = document.createElement('option');
+                opt3.value = cat.title;
+                opt3.innerText = cat.title;
+                contactSelect.appendChild(opt3);
+            });
+        }
+
+        // 5. Cost Estimator Calculation
+        function updateCalculator() {
+            const selectVal = document.getElementById('calc-category-select').value;
+            const cat = linksInnCategories[selectVal] || linksInnCategories[0];
+            const length = parseFloat(document.getElementById('calc-length').value) || 0;
+            const width = parseFloat(document.getElementById('calc-width').value) || 0;
+
+            const area = length * width;
+
+            document.getElementById('calc-summary-cat').innerText = cat.title;
+            document.getElementById('calc-summary-area').innerText = `${area} sq. ft. (${length}x${width} ft)`;
+            document.getElementById('calc-total-price').innerText = `Quote Request`;
+
+            // Pre-fill WhatsApp URL
+            const waBtn = document.getElementById('calc-whatsapp-btn');
+            const msg = `Hi LINKS INN! I want a rate quote for ${cat.title}: Area ${area} sq.ft (${length}x${width} ft). Please confirm measurement visit and rates.`;
+            waBtn.href = `https://wa.me/923182064707?text=${encodeURIComponent(msg)}`;
+        }
+
+        // 6. User Custom Photo Upload Handler
+        function handleUserPhotoUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const targetIdx = parseInt(document.getElementById('user-upload-category-target').value);
+            const customLabel = document.getElementById('user-upload-custom-label').value.trim();
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const uploadedDataUrl = e.target.result;
+
+                // Update the array data dynamically
+                linksInnCategories[targetIdx].image = uploadedDataUrl;
+                if (customLabel) {
+                    linksInnCategories[targetIdx].shortDesc = customLabel;
+                }
+
+                // Re-render showcase grid
+                renderAllCategoriesGrid();
+
+                // Instantly select this updated category in Hero frame!
+                selectHeroCategory(targetIdx);
+
+                // Show feedback toast
+                const feedback = document.getElementById('upload-feedback-msg');
+                feedback.classList.remove('hidden', 'bg-red-900/50', 'text-red-300', 'border-red-500/30');
+                feedback.classList.add('bg-emerald-950/80', 'text-emerald-300', 'border-emerald-500/40');
+                feedback.innerHTML = `<i class="fas fa-check-circle mr-2"></i> Photo successfully uploaded and set for <strong>${linksInnCategories[targetIdx].title}</strong>! Scroll up to preview in the main hero frame.`;
+
+                // Scroll to hero
+                document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
+            };
+
+            reader.readAsDataURL(file);
+        }
+
+        // 7. Open Direct Category WhatsApp Modal / Redirect
+        function openCategoryQuoteModal() {
+            const cat = linksInnCategories[currentActiveCategoryIndex];
+            const msg = `Hi LINKS INN! I am interested in getting a quote for ${cat.title}. Please send me catalogue samples and pricing.`;
+            window.open(`https://wa.me/923182064707?text=${encodeURIComponent(msg)}`, '_blank');
+        }
+
+        // 8. Contact Form Handler
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('contact-name').value;
+            const phone = document.getElementById('contact-phone').value;
+            const category = document.getElementById('contact-category').value;
+            const message = document.getElementById('contact-message').value;
+
+            const status = document.getElementById('contact-status');
+            status.classList.remove('hidden');
+            status.className = 'mt-4 p-4 rounded-xl text-xs font-semibold text-center border bg-emerald-950/80 text-emerald-300 border-emerald-500/40';
+            status.innerHTML = `<i class="fas fa-check-circle mr-2"></i> Thank you ${name}! Your inquiry for <strong>${category}</strong> has been received. Redirecting to WhatsApp...`;
+
+            const waMsg = `Hi LINKS INN!\nName: ${name}\nPhone: ${phone}\nProduct: ${category}\nDetails: ${message}`;
+            setTimeout(() => {
+                window.open(`https://wa.me/923182064707?text=${encodeURIComponent(waMsg)}`, '_blank');
+            }, 1000);
+
+            document.getElementById('contact-form').reset();
+        }
+
+        // Mobile Menu Drawer Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
